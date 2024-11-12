@@ -1,13 +1,13 @@
 <?php
 
-namespace InfyOm\Generator\Utils;
+namespace YusufTogtay\Generator\Utils;
 
 use DB;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Doctrine\DBAL\Schema\Column;
 use Illuminate\Support\Str;
-use InfyOm\Generator\Common\GeneratorField;
-use InfyOm\Generator\Common\GeneratorFieldRelation;
+use YusufTogtay\Generator\Common\GeneratorField;
+use YusufTogtay\Generator\Common\GeneratorFieldRelation;
 
 class GeneratorForeignKey
 {

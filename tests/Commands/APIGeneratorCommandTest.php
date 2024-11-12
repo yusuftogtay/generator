@@ -1,22 +1,22 @@
 <?php
 
-use InfyOm\Generator\Commands\API\APIGeneratorCommand;
-use InfyOm\Generator\Facades\FileUtils;
-use InfyOm\Generator\Generators\API\APIControllerGenerator;
-use InfyOm\Generator\Generators\API\APIRequestGenerator;
-use InfyOm\Generator\Generators\API\APIRoutesGenerator;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\FactoryGenerator;
-use InfyOm\Generator\Generators\MigrationGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
-use InfyOm\Generator\Generators\RepositoryGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
-use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
-use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
-use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
-use InfyOm\Generator\Generators\Scaffold\RoutesGenerator;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
-use InfyOm\Generator\Generators\SeederGenerator;
+use YusufTogtay\Generator\Commands\API\APIGeneratorCommand;
+use YusufTogtay\Generator\Facades\FileUtils;
+use YusufTogtay\Generator\Generators\API\APIControllerGenerator;
+use YusufTogtay\Generator\Generators\API\APIRequestGenerator;
+use YusufTogtay\Generator\Generators\API\APIRoutesGenerator;
+use YusufTogtay\Generator\Generators\API\APITestGenerator;
+use YusufTogtay\Generator\Generators\FactoryGenerator;
+use YusufTogtay\Generator\Generators\MigrationGenerator;
+use YusufTogtay\Generator\Generators\ModelGenerator;
+use YusufTogtay\Generator\Generators\RepositoryGenerator;
+use YusufTogtay\Generator\Generators\RepositoryTestGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\ControllerGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\MenuGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\RequestGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\RoutesGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\ViewGenerator;
+use YusufTogtay\Generator\Generators\SeederGenerator;
 use Mockery as m;
 
 use function Pest\Laravel\artisan;

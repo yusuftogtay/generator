@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Commands;
+namespace YusufTogtay\Generator\Commands;
 
 class APIScaffoldGeneratorCommand extends BaseCommand
 {

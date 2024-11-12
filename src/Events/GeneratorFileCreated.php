@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Events;
+namespace YusufTogtay\Generator\Events;
 
 use Illuminate\Queue\SerializesModels;
 

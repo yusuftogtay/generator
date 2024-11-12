@@ -1,7 +1,7 @@
 <?php
 
-use InfyOm\Generator\Facades\FileUtils;
-use InfyOm\Generator\Generators\API\APIControllerGenerator;
+use YusufTogtay\Generator\Facades\FileUtils;
+use YusufTogtay\Generator\Generators\API\APIControllerGenerator;
 use Mockery as m;
 
 beforeEach(function () {

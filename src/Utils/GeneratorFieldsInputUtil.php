@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Utils;
+namespace YusufTogtay\Generator\Utils;
 
 class GeneratorFieldsInputUtil
 {

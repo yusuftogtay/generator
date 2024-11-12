@@ -1,10 +1,10 @@
 <?php
 
-namespace InfyOm\Generator\Commands\API;
+namespace YusufTogtay\Generator\Commands\API;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
+use YusufTogtay\Generator\Commands\BaseCommand;
+use YusufTogtay\Generator\Generators\API\APITestGenerator;
+use YusufTogtay\Generator\Generators\RepositoryTestGenerator;
 
 class TestsGeneratorCommand extends BaseCommand
 {

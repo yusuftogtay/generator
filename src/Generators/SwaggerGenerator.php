@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace YusufTogtay\Generator\Generators;
 
-use InfyOm\Generator\Common\GeneratorField;
+use YusufTogtay\Generator\Common\GeneratorField;
 
 class SwaggerGenerator
 {

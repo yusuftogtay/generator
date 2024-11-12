@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Commands\API;
+namespace YusufTogtay\Generator\Commands\API;
 
-use InfyOm\Generator\Commands\BaseCommand;
+use YusufTogtay\Generator\Commands\BaseCommand;
 
 class APIGeneratorCommand extends BaseCommand
 {

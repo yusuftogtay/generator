@@ -1,12 +1,12 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace YusufTogtay\Generator\Generators\Scaffold;
 
 use Exception;
 use Illuminate\Support\Str;
-use InfyOm\Generator\Generators\BaseGenerator;
-use InfyOm\Generator\Generators\ViewServiceProviderGenerator;
-use InfyOm\Generator\Utils\HTMLFieldGenerator;
+use YusufTogtay\Generator\Generators\BaseGenerator;
+use YusufTogtay\Generator\Generators\ViewServiceProviderGenerator;
+use YusufTogtay\Generator\Utils\HTMLFieldGenerator;
 
 class ViewGenerator extends BaseGenerator
 {

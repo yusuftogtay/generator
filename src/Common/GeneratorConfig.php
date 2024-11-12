@@ -1,14 +1,14 @@
 <?php
 
-namespace InfyOm\Generator\Common;
+namespace YusufTogtay\Generator\Common;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use InfyOm\Generator\DTOs\GeneratorNamespaces;
-use InfyOm\Generator\DTOs\GeneratorOptions;
-use InfyOm\Generator\DTOs\GeneratorPaths;
-use InfyOm\Generator\DTOs\GeneratorPrefixes;
-use InfyOm\Generator\DTOs\ModelNames;
+use YusufTogtay\Generator\DTOs\GeneratorNamespaces;
+use YusufTogtay\Generator\DTOs\GeneratorOptions;
+use YusufTogtay\Generator\DTOs\GeneratorPaths;
+use YusufTogtay\Generator\DTOs\GeneratorPrefixes;
+use YusufTogtay\Generator\DTOs\ModelNames;
 
 class GeneratorConfig
 {

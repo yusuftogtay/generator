@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators\API;
+namespace YusufTogtay\Generator\Generators\API;
 
-use InfyOm\Generator\Generators\BaseGenerator;
+use YusufTogtay\Generator\Generators\BaseGenerator;
 
 class APITestGenerator extends BaseGenerator
 {

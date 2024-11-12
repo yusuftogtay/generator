@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators\Scaffold;
+namespace YusufTogtay\Generator\Generators\Scaffold;
 
-use InfyOm\Generator\Generators\BaseGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
+use YusufTogtay\Generator\Generators\BaseGenerator;
+use YusufTogtay\Generator\Generators\ModelGenerator;
 
 class RequestGenerator extends BaseGenerator
 {

@@ -1,5 +1,5 @@
 {
-    "name": "infyomlabs/laravel-generator",
+    "name": "yusuftogtay/generator",
     "type": "library",
     "description": "InfyOm Laravel Generator",
     "keywords": [
@@ -40,7 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "InfyOm\\Generator\\": "src/"
+            "YusufTogtay\\Generator\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\InfyOm\\Generator\\InfyOmGeneratorServiceProvider"
+                "\\YusufTogtay\\Generator\\InfyOmGeneratorServiceProvider"
             ]
         }
     },

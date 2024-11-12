@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Scaffold;
+namespace YusufTogtay\Generator\Commands\Scaffold;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
+use YusufTogtay\Generator\Commands\BaseCommand;
+use YusufTogtay\Generator\Generators\Scaffold\ViewGenerator;
 
 class ViewsGeneratorCommand extends BaseCommand
 {

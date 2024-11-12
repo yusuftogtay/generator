@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use InfyOm\Generator\InfyOmGeneratorServiceProvider;
+use YusufTogtay\Generator\InfyOmGeneratorServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

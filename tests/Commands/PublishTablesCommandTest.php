@@ -1,6 +1,6 @@
 <?php
 
-use InfyOm\Generator\Commands\Publish\PublishTablesCommand;
+use YusufTogtay\Generator\Commands\Publish\PublishTablesCommand;
 
 use function Pest\Laravel\artisan;
 

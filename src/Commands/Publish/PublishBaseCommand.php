@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Publish;
+namespace YusufTogtay\Generator\Commands\Publish;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Common\FileSystem;
+use YusufTogtay\Generator\Common\FileSystem;
 
 if (!function_exists('g_filesystem')) {
     /**

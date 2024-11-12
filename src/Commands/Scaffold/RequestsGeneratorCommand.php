@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Scaffold;
+namespace YusufTogtay\Generator\Commands\Scaffold;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
+use YusufTogtay\Generator\Commands\BaseCommand;
+use YusufTogtay\Generator\Generators\Scaffold\RequestGenerator;
 
 class RequestsGeneratorCommand extends BaseCommand
 {

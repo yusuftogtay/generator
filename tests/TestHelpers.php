@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Console\Command;
-use InfyOm\Generator\Common\GeneratorConfig;
+use YusufTogtay\Generator\Common\GeneratorConfig;
 use Mockery as m;
 
 function mockShouldHaveCalledGenerateMethod(array $shouldHaveCalledGenerators): array

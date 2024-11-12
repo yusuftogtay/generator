@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace YusufTogtay\Generator\Generators;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Utils\GeneratorFieldsInputUtil;
+use YusufTogtay\Generator\Utils\GeneratorFieldsInputUtil;
 
 class FactoryGenerator extends BaseGenerator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\DTOs;
+namespace YusufTogtay\Generator\DTOs;
 
 use Illuminate\Support\Str;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace YusufTogtay\Generator\Generators;
 
-use InfyOm\Generator\Common\GeneratorConfig;
+use YusufTogtay\Generator\Common\GeneratorConfig;
 
 abstract class BaseGenerator
 {

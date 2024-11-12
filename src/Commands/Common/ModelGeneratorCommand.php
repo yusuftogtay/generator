@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Commands\Common;
+namespace YusufTogtay\Generator\Commands\Common;
 
-use InfyOm\Generator\Commands\BaseCommand;
-use InfyOm\Generator\Generators\ModelGenerator;
+use YusufTogtay\Generator\Commands\BaseCommand;
+use YusufTogtay\Generator\Generators\ModelGenerator;
 
 class ModelGeneratorCommand extends BaseCommand
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace YusufTogtay\Generator\Generators;
 
 class SeederGenerator extends BaseGenerator
 {

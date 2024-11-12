@@ -1,9 +1,9 @@
 <?php
 
-namespace InfyOm\Generator\Generators;
+namespace YusufTogtay\Generator\Generators;
 
 use Illuminate\Support\Str;
-use InfyOm\Generator\Utils\TableFieldsGenerator;
+use YusufTogtay\Generator\Utils\TableFieldsGenerator;
 
 class ModelGenerator extends BaseGenerator
 {

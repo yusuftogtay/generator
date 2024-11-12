@@ -1,43 +1,43 @@
 <?php
 
-namespace InfyOm\Generator;
+namespace YusufTogtay\Generator;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use InfyOm\Generator\Commands\API\APIControllerGeneratorCommand;
-use InfyOm\Generator\Commands\API\APIGeneratorCommand;
-use InfyOm\Generator\Commands\API\APIRequestsGeneratorCommand;
-use InfyOm\Generator\Commands\API\TestsGeneratorCommand;
-use InfyOm\Generator\Commands\APIScaffoldGeneratorCommand;
-use InfyOm\Generator\Commands\Common\MigrationGeneratorCommand;
-use InfyOm\Generator\Commands\Common\ModelGeneratorCommand;
-use InfyOm\Generator\Commands\Common\RepositoryGeneratorCommand;
-use InfyOm\Generator\Commands\Publish\GeneratorPublishCommand;
-use InfyOm\Generator\Commands\Publish\PublishTablesCommand;
-use InfyOm\Generator\Commands\Publish\PublishUserCommand;
-use InfyOm\Generator\Commands\RollbackGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ControllerGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\RequestsGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ScaffoldGeneratorCommand;
-use InfyOm\Generator\Commands\Scaffold\ViewsGeneratorCommand;
-use InfyOm\Generator\Common\FileSystem;
-use InfyOm\Generator\Common\GeneratorConfig;
-use InfyOm\Generator\Generators\API\APIControllerGenerator;
-use InfyOm\Generator\Generators\API\APIRequestGenerator;
-use InfyOm\Generator\Generators\API\APIRoutesGenerator;
-use InfyOm\Generator\Generators\API\APITestGenerator;
-use InfyOm\Generator\Generators\FactoryGenerator;
-use InfyOm\Generator\Generators\MigrationGenerator;
-use InfyOm\Generator\Generators\ModelGenerator;
-use InfyOm\Generator\Generators\RepositoryGenerator;
-use InfyOm\Generator\Generators\RepositoryTestGenerator;
-use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
-use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
-use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
-use InfyOm\Generator\Generators\Scaffold\RoutesGenerator;
-use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
-use InfyOm\Generator\Generators\SeederGenerator;
+use YusufTogtay\Generator\Commands\API\APIControllerGeneratorCommand;
+use YusufTogtay\Generator\Commands\API\APIGeneratorCommand;
+use YusufTogtay\Generator\Commands\API\APIRequestsGeneratorCommand;
+use YusufTogtay\Generator\Commands\API\TestsGeneratorCommand;
+use YusufTogtay\Generator\Commands\APIScaffoldGeneratorCommand;
+use YusufTogtay\Generator\Commands\Common\MigrationGeneratorCommand;
+use YusufTogtay\Generator\Commands\Common\ModelGeneratorCommand;
+use YusufTogtay\Generator\Commands\Common\RepositoryGeneratorCommand;
+use YusufTogtay\Generator\Commands\Publish\GeneratorPublishCommand;
+use YusufTogtay\Generator\Commands\Publish\PublishTablesCommand;
+use YusufTogtay\Generator\Commands\Publish\PublishUserCommand;
+use YusufTogtay\Generator\Commands\RollbackGeneratorCommand;
+use YusufTogtay\Generator\Commands\Scaffold\ControllerGeneratorCommand;
+use YusufTogtay\Generator\Commands\Scaffold\RequestsGeneratorCommand;
+use YusufTogtay\Generator\Commands\Scaffold\ScaffoldGeneratorCommand;
+use YusufTogtay\Generator\Commands\Scaffold\ViewsGeneratorCommand;
+use YusufTogtay\Generator\Common\FileSystem;
+use YusufTogtay\Generator\Common\GeneratorConfig;
+use YusufTogtay\Generator\Generators\API\APIControllerGenerator;
+use YusufTogtay\Generator\Generators\API\APIRequestGenerator;
+use YusufTogtay\Generator\Generators\API\APIRoutesGenerator;
+use YusufTogtay\Generator\Generators\API\APITestGenerator;
+use YusufTogtay\Generator\Generators\FactoryGenerator;
+use YusufTogtay\Generator\Generators\MigrationGenerator;
+use YusufTogtay\Generator\Generators\ModelGenerator;
+use YusufTogtay\Generator\Generators\RepositoryGenerator;
+use YusufTogtay\Generator\Generators\RepositoryTestGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\ControllerGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\MenuGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\RequestGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\RoutesGenerator;
+use YusufTogtay\Generator\Generators\Scaffold\ViewGenerator;
+use YusufTogtay\Generator\Generators\SeederGenerator;
 
 class InfyOmGeneratorServiceProvider extends ServiceProvider
 {
