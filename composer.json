@@ -28,7 +28,7 @@
         "illuminate/support": "^11.0",
         "illuminate/console": "^11.0",
         "laracasts/flash": "^3.2.2",
-        "laravelcollective/html": "6.x-dev",
+        "laravelcollective/html": "1.0.0",
         "symfony/var-exporter": "^6.2.5"
     },
     "require-dev": {
@@ -41,7 +41,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/cooldeark/html"
+            "url": "https://github.com/yusuftogtay/html"
         }
     ],
     "autoload": {
@@ -70,7 +70,7 @@
             "url": "https://opencollective.com/infyomlabs"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {

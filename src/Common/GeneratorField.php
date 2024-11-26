@@ -47,10 +47,10 @@ class GeneratorField
 
         $this->dbExtraFunctions = $dbInputArr;
 
-//        if (!is_null($column)) {
-//            $this->dbType = ($column->getLength() > 0) ? $this->dbType.','.$column->getLength() : $this->dbType;
-//            $this->dbType = (!$column->getNotnull()) ? $this->dbType.':nullable' : $this->dbType;
-//        }
+        //        if (!is_null($column)) {
+        //            $this->dbType = ($column->getLength() > 0) ? $this->dbType.','.$column->getLength() : $this->dbType;
+        //            $this->dbType = (!$column->getNotnull()) ? $this->dbType.':nullable' : $this->dbType;
+        //        }
 
         $this->prepareMigrationText();
     }
@@ -107,7 +107,7 @@ class GeneratorField
     protected function prepareMigrationText()
     {
         $this->migrationText = '$table->';
-        $this->migrationText .= $this->dbType."('".$this->name."'";
+        $this->migrationText .= $this->dbType . "('" . $this->name . "'";
 
         if (!count($this->dbTypeParams) and !count($this->dbExtraFunctions)) {
             $this->migrationText .= ');';
@@ -116,16 +116,16 @@ class GeneratorField
         }
 
         if (count($this->dbTypeParams)) {
-//        if ($this->dbType === 'enum') {
-//            $this->migrationText .= ', [';
-//            foreach ($fieldTypeParams as $param) {
-//                $this->migrationText .= "'".$param."',";
-//            }
-//            $this->migrationText = substr($this->migrationText, 0, strlen($this->migrationText) - 1);
-//            $this->migrationText .= ']';
-//        }
+            //        if ($this->dbType === 'enum') {
+            //            $this->migrationText .= ', [';
+            //            foreach ($fieldTypeParams as $param) {
+            //                $this->migrationText .= "'".$param."',";
+            //            }
+            //            $this->migrationText = substr($this->migrationText, 0, strlen($this->migrationText) - 1);
+            //            $this->migrationText .= ']';
+            //        }
             foreach ($this->dbTypeParams as $dbTypeParam) {
-                $this->migrationText .= ', '.$dbTypeParam;
+                $this->migrationText .= ', ' . $dbTypeParam;
             }
         }
 
@@ -133,7 +133,6 @@ class GeneratorField
 
         if (!count($this->dbExtraFunctions)) {
             $this->migrationText .= ';';
-
             return;
         }
 
@@ -144,7 +143,7 @@ class GeneratorField
             if ($functionName === 'foreign') {
                 $foreignTable = array_shift($dbExtraFunctionArr);
                 $foreignField = array_shift($dbExtraFunctionArr);
-                $this->foreignKeyText .= "\$table->foreign('".$this->name."')->references('".$foreignField."')->on('".$foreignTable."')";
+                $this->foreignKeyText .= "\$table->foreign('" . $this->name . "')->references('" . $foreignField . "')->on('" . $foreignTable . "')";
                 if (count($dbExtraFunctionArr)) {
                     $cascade = array_shift($dbExtraFunctionArr);
                     if ($cascade === 'cascade') {
@@ -153,7 +152,7 @@ class GeneratorField
                 }
                 $this->foreignKeyText .= ';';
             } else {
-                $this->migrationText .= '->'.$functionName;
+                $this->migrationText .= '->' . $functionName;
                 $this->migrationText .= '(';
                 $this->migrationText .= implode(', ', $dbExtraFunctionArr);
                 $this->migrationText .= ')';

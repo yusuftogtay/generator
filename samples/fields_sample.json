@@ -1,5 +1,18 @@
 [
     {
+        "name": "user_id",
+        "dbType": "foreign:constrained",
+        "htmlType": "number",
+        "relation": "mt1,User,user_id,id",
+        "validations": "required|min:1",
+        "searchable": false,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
         "name": "id",
         "dbType": "id",
         "htmlType": null,
@@ -10,19 +23,6 @@
         "inForm": false,
         "inIndex": false,
         "inView": false
-    },
-    {
-        "name": "user_id",
-        "dbType": "foreignId:constrained",
-        "htmlType": "number",
-        "relation": "mt1,User,user_id,id",
-        "validations": "required|min:1",
-        "searchable": false,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
     },
     {
         "name": "title",

@@ -32,7 +32,9 @@ class APIScaffoldGeneratorCommand extends BaseCommand
 
         $this->generateAPIItems();
 
-        $this->generateScaffoldItems();
+        if (!$this->option('just_api')) {
+            $this->generateScaffoldItems();
+        }
 
         $this->performPostActionsWithMigration();
         $this->fireFileCreatedEvent('api_scaffold');

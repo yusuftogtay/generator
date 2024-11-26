@@ -17,7 +17,7 @@ class ControllerGenerator extends BaseGenerator
 
         $this->path = $this->config->paths->controller;
         $this->templateType = config('laravel_generator.templates', 'adminlte-templates');
-        $this->fileName = $this->config->modelNames->name.'Controller.php';
+        $this->fileName = $this->config->modelNames->name . 'Controller.php';
     }
 
     public function generate()
@@ -54,46 +54,46 @@ class ControllerGenerator extends BaseGenerator
             $viewName = 'controller';
         }
 
-        $variables['indexMethod'] = view('laravel-generator::scaffold.controller.'.$indexMethodView, $variables)
+        $variables['indexMethod'] = view('generator::scaffold.controller.' . $indexMethodView, $variables)
             ->render();
 
-        $templateData = view('laravel-generator::scaffold.controller.'.$viewName, $variables)->render();
+        $templateData = view('generator::scaffold.controller.' . $viewName, $variables)->render();
 
-        g_filesystem()->createFile($this->path.$this->fileName, $templateData);
+        g_filesystem()->createFile($this->path . $this->fileName, $templateData);
 
-        $this->config->commandComment(infy_nl().'Controller created: ');
+        $this->config->commandComment(infy_nl() . 'Controller created: ');
         $this->config->commandInfo($this->fileName);
     }
 
     protected function generateDataTable()
     {
-        $templateData = view('laravel-generator::scaffold.table.datatable', [
-            'columns' => implode(','.infy_nl_tab(1, 3), $this->generateDataTableColumns()),
+        $templateData = view('generator::scaffold.table.datatable', [
+            'columns' => implode(',' . infy_nl_tab(1, 3), $this->generateDataTableColumns()),
         ])->render();
 
         $path = $this->config->paths->dataTables;
 
-        $fileName = $this->config->modelNames->name.'DataTable.php';
+        $fileName = $this->config->modelNames->name . 'DataTable.php';
 
-        g_filesystem()->createFile($path.$fileName, $templateData);
+        g_filesystem()->createFile($path . $fileName, $templateData);
 
-        $this->config->commandComment(infy_nl().'DataTable created: ');
+        $this->config->commandComment(infy_nl() . 'DataTable created: ');
         $this->config->commandInfo($fileName);
     }
 
     protected function generateLivewireTable()
     {
-        $templateData = view('laravel-generator::scaffold.table.livewire', [
-            'columns' => implode(','.infy_nl_tab(1, 3), $this->generateLivewireTableColumns()),
+        $templateData = view('generator::scaffold.table.livewire', [
+            'columns' => implode(',' . infy_nl_tab(1, 3), $this->generateLivewireTableColumns()),
         ])->render();
 
         $path = $this->config->paths->livewireTables;
 
-        $fileName = $this->config->modelNames->plural.'Table.php';
+        $fileName = $this->config->modelNames->plural . 'Table.php';
 
-        g_filesystem()->createFile($path.$fileName, $templateData);
+        g_filesystem()->createFile($path . $fileName, $templateData);
 
-        $this->config->commandComment(infy_nl().'LivewireTable created: ');
+        $this->config->commandComment(infy_nl() . 'LivewireTable created: ');
         $this->config->commandInfo($fileName);
     }
 
@@ -106,7 +106,7 @@ class ControllerGenerator extends BaseGenerator
             }
 
             $dataTableColumns[] = trim(view(
-                $this->templateType.'::templates.scaffold.table.datatable.column',
+                $this->templateType . '::templates.scaffold.table.datatable.column',
                 $field->variables()
             )->render());
         }
@@ -123,11 +123,11 @@ class ControllerGenerator extends BaseGenerator
                 continue;
             }
 
-            $fieldTemplate = 'Column::make("'.$field->getTitle().'", "'.$field->name.'")'.infy_nl();
-            $fieldTemplate .= infy_tabs(4).'->sortable()';
+            $fieldTemplate = 'Column::make("' . $field->getTitle() . '", "' . $field->name . '")' . infy_nl();
+            $fieldTemplate .= infy_tabs(4) . '->sortable()';
 
             if ($field->isSearchable) {
-                $fieldTemplate .= infy_nl().infy_tabs(4).'->searchable()';
+                $fieldTemplate .= infy_nl() . infy_tabs(4) . '->searchable()';
             }
 
             $livewireTableColumns[] = $fieldTemplate;
@@ -139,24 +139,24 @@ class ControllerGenerator extends BaseGenerator
     public function rollback()
     {
         if ($this->rollbackFile($this->path, $this->fileName)) {
-            $this->config->commandComment('Controller file deleted: '.$this->fileName);
+            $this->config->commandComment('Controller file deleted: ' . $this->fileName);
         }
 
         if ($this->config->tableType === 'datatables') {
             if ($this->rollbackFile(
                 $this->config->paths->dataTables,
-                $this->config->modelNames->name.'DataTable.php'
+                $this->config->modelNames->name . 'DataTable.php'
             )) {
-                $this->config->commandComment('DataTable file deleted: '.$this->fileName);
+                $this->config->commandComment('DataTable file deleted: ' . $this->fileName);
             }
         }
 
         if ($this->config->tableType === 'livewire') {
             if ($this->rollbackFile(
                 $this->config->paths->livewireTables,
-                $this->config->modelNames->plural.'Table.php'
+                $this->config->modelNames->plural . 'Table.php'
             )) {
-                $this->config->commandComment('Livewire Table file deleted: '.$this->fileName);
+                $this->config->commandComment('Livewire Table file deleted: ' . $this->fileName);
             }
         }
     }

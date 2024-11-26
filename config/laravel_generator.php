@@ -204,8 +204,9 @@ return [
     */
 
     'from_table' => [
-
         'doctrine_mappings' => [],
     ],
 
+
+    'base_xml' => base_path('schemas/maintex.drawio')
 ];
